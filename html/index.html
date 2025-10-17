@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>UMBRA — Votaciones estudiantiles privadas y verificadas</title>
+  <meta name="description" content="Umbra es un sistema de votación estudiantil privado y verificado para decisiones colectivas, con enfoque en anonimato, voto único y transparencia." />
+  <meta name="theme-color" content="#05060a" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- Fondo decorativo -->
+  <div class="bg aura aura-1" aria-hidden="true"></div>
+  <div class="bg aura aura-2" aria-hidden="true"></div>
+  <div class="bg grain" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#" class="brand" aria-label="Umbra inicio">
+        <span class="brand-mark" aria-hidden="true">
+          <!-- Marca simple con eclipse/umbra -->
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" role="img">
+            <defs>
+              <radialGradient id="g" cx="50%" cy="50%" r="70%">
+                <stop offset="0%" stop-color="#00B2FF"/>
+                <stop offset="100%" stop-color="#0B0F1A"/>
+              </radialGradient>
+            </defs>
+            <circle cx="14" cy="14" r="12" fill="url(#g)"/>
+            <circle cx="10.5" cy="10.5" r="8.5" fill="#05060a" opacity="0.9"/>
+          </svg>
+        </span>
+        <span class="brand-name">umbra</span>
+      </a>
+
+      <nav class="nav">
+        <a href="#como-funciona">Cómo funciona</a>
+        <a href="#confianza">Confianza</a>
+        <a href="#consultas">Consultas</a>
+        <a href="#contacto" class="pill">Contacto</a>
+      </nav>
+    </div>
+    <div class="header-accent" aria-hidden="true"></div>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <p class="kicker">Votaciones estudiantiles</p>
+      <h1 class="hero-title">
+        Decisiones colectivas, <span class="gradient-text">anónimas</span> y <span class="gradient-text-2">verificadas</span>.
+      </h1>
+      <p class="hero-subtitle">
+        Umbra permite que la comunidad estudiantil decida ir a paro o no, sin exponer datos personales.
+        Verificamos que cada votante exista y garantizamos <strong>voto único</strong> y resultados transparentes.
+      </p>
+
+      <div class="cta-row">
+        <a href="#" class="btn btn-primary" aria-disabled="true">Entrar con credencial</a>
+        <a href="#consultas" class="btn btn-ghost">Ver consultas</a>
+      </div>
+
+      <div class="hero-card glass" role="region" aria-labelledby="consulta-activa-title">
+        <div class="card-header">
+          <div>
+            <span class="badge badge-live" aria-hidden="true"></span>
+            <span class="badge-text">Consulta activa</span>
+          </div>
+          <time class="card-time" datetime="2025-10-24">Cierra: 24 Oct 2025, 18:00</time>
+        </div>
+
+        <h2 id="consulta-activa-title" class="card-title">¿Ir a paro general?</h2>
+        <p class="card-desc">Ejemplo demostrativo sin funcionalidad. El voto es anónimo; la verificación es privada.</p>
+
+        <form class="vote-form" aria-describedby="demo-note">
+          <fieldset class="option-group" disabled>
+            <legend class="visually-hidden">Opciones de voto</legend>
+
+            <label class="option-card">
+              <input type="radio" name="voto" />
+              <span class="option-visual">
+                <span class="option-icon" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" role="img" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5 12l4 4L19 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+                <span class="option-text">
+                  <span class="option-title">Sí, ir a paro</span>
+                  <span class="option-sub">Acción colectiva inmediata</span>
+                </span>
+              </span>
+            </label>
+
+            <label class="option-card">
+              <input type="radio" name="voto" />
+              <span class="option-visual">
+                <span class="option-icon" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" role="img" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+                <span class="option-text">
+                  <span class="option-title">No, continuar clases</span>
+                  <span class="option-sub">Buscar alternativas</span>
+                </span>
+              </span>
+            </label>
+          </fieldset>
+
+          <div id="demo-note" class="note">
+            Interfaz de muestra (sin envío). Votaciones reales requieren inicio de sesión institucional y verificación.
+          </div>
+
+          <div class="form-actions">
+            <button type="button" class="btn btn-disabled" aria-disabled="true">Emitir voto</button>
+            <a href="#" class="link subtle" aria-disabled="true">Ver metodología</a>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section id="como-funciona" class="features container">
+      <h2 class="section-title">Diseñado para confianza</h2>
+      <div class="grid">
+        <article class="feature glass">
+          <div class="feature-icon shield" aria-hidden="true"></div>
+          <h3>Privacidad primero</h3>
+          <p>Anonimato por diseño: no almacenamos nombres ni matrículas vinculadas al voto.</p>
+        </article>
+
+        <article class="feature glass">
+          <div class="feature-icon verify" aria-hidden="true"></div>
+          <h3>Verificación real</h3>
+          <p>Comprobamos que quien vota pertenece a la comunidad, sin exponer datos personales.</p>
+        </article>
+
+        <article class="feature glass">
+          <div class="feature-icon onevote" aria-hidden="true"></div>
+          <h3>Voto único</h3>
+          <p>Un voto por persona con controles antifraude y protección contra votos duplicados.</p>
+        </article>
+
+        <article class="feature glass">
+          <div class="feature-icon transparency" aria-hidden="true"></div>
+          <h3>Transparencia</h3>
+          <p>Resultados auditables y trazabilidad de procesos sin comprometer el anonimato.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="consultas" class="cta-strip container glass">
+      <div class="cta-strip-inner">
+        <div>
+          <p class="kicker">Próxima consulta</p>
+          <h3>Consejo General — Semana 43</h3>
+          <p class="muted">Únicamente con credencial vigente. Apertura prevista: 24 Oct 2025.</p>
+        </div>
+        <div class="cta-actions">
+          <a href="#" class="btn btn-primary" aria-disabled="true">Participar</a>
+          <a href="#" class="btn btn-ghost">Ver histórico</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contacto" class="site-footer">
+    <div class="container footer-inner">
+      <div class="brand-col">
+        <div class="brand footer-brand">
+          <span class="brand-mark" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" role="img">
+              <defs>
+                <radialGradient id="g2" cx="50%" cy="50%" r="70%">
+                  <stop offset="0%" stop-color="#00B2FF"/>
+                  <stop offset="100%" stop-color="#0B0F1A"/>
+                </radialGradient>
+              </defs>
+              <circle cx="14" cy="14" r="12" fill="url(#g2)"/>
+              <circle cx="10.5" cy="10.5" r="8.5" fill="#05060a" opacity="0.9"/>
+            </svg>
+          </span>
+          <span class="brand-name">umbra</span>
+        </div>
+        <p class="muted small">
+          Hecho para la comunidad, con privacidad y verificación en mente.
+        </p>
+      </div>
+
+      <nav class="footer-nav">
+        <div>
+          <h4>Producto</h4>
+          <a href="#como-funciona">Cómo funciona</a>
+          <a href="#consultas">Consultas</a>
+          <a href="#">Metodología</a>
+        </div>
+        <div>
+          <h4>Legal</h4>
+          <a href="#">Aviso de privacidad</a>
+          <a href="#">Términos</a>
+        </div>
+        <div>
+          <h4>Contacto</h4>
+          <a href="mailto:contacto@umbra.example">contacto@umbra.example</a>
+        </div>
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p class="muted small">© <span id="year">2025</span> Umbra. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
